@@ -1,24 +1,21 @@
 import React from 'react'
-import { Navbar, AboutMe, Portfolio, Contact, Resume, Footer } from './components';
-
+import { Outlet, useLocation } from 'react-router-dom';
+import Header from './components/Header'
+import Footer from './components/Footer'
 
 const App = () => {
+
+  const location = useLocation();
+
     return (
-        <div className="">
-            <div className="">
-              <Navbar />
-            </div>
-            <div className="">
-              <AboutMe />
-              <Portfolio />
-              <Contact />
-              <Resume />
-            </div>
-            <div className="">
-              <Footer />
-            </div>
+      <>
+        <div className='App'>
+          <Header />
+          <Outlet location={location} key={location.pathname} />
+          <Footer />
         </div>
+      </>
     )
 }
 
-export default App
+export default App;
