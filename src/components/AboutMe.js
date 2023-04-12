@@ -3,20 +3,19 @@ import React from 'react';
 const AboutMe = () => {
     return (
       <>
-      <div className=''>
-        <div className=''>
-            <section className=''>
-                <div className=''>
-                    <img src='../../assets/images/Avatar.jpeg' alt='my profile'
-                        className='' />
-                    <h2>Hello!</h2>
-                    <p>
-                    I'm Jerry Beau Baggett, and I go by Beau. I am a fitness enthusiast with a passion for Full-Stack Development. I am a driven and motivated professional with a diverse background. Thank you for visiting my portfolio. Please feel free to contact me if you have questions or need assistance with anything!
-                    </p>
-                </div>
-            </section>
-        </div>
-      </div>
+        <div className='grid container my-5 text-end rounded'> 
+          <div className='card bg-secondary'>
+            <img src={require('../assets/images/Avatar.jpeg')} className='card-img-top m-2' id='avatar' alt='my profile'/>
+            <div className='card-body'>
+              <h3 className='card-title'>
+                <p className='card-text'>Hello!!</p>
+              </h3>
+              <p>
+                My name is Beau and I am a fitness enthusiast with a passion for Full-Stack Development. I am a driven and motivated professional with a diverse background. I recently changed fields and am expanding my skills as a developer. Please feel free to contact me if you have questions or need assistance with anything! Thank you for visiting my portfolio!
+              </p>
+            </div>
+          </div>
+        </div> 
       </>
     );
   };

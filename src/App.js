@@ -8,13 +8,11 @@ const App = () => {
   const location = useLocation();
 
     return (
-      <>
-        <div className='App'>
+        <div className=''>
           <Header />
           <Outlet location={location} key={location.pathname} />
           <Footer />
         </div>
-      </>
     )
 }
 

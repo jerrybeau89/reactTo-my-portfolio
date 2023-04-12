@@ -14,3 +14,79 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#avatar{
+  width: 150px;
+  height: 155px;
+  border-radius: 50%;
+}
+/* .P1-img {
+  padding: 5px;
+  margin: 5px;
+  height: 190px;
+  width: 250px;
+  border-radius: 12%;
+} */
+
+.P1-img, .P2-img, .P3-img, .P4-img, .P5-img, .P6-img { 
+  padding: 5px;
+  margin: 5px;
+  max-height: 55%;
+  max-width: 55%;
+  border-radius: 12%;
+}
+.hoverable:hover {
+  box-shadow: 5px 10px 18px 18px #888888;
+  border-radius: 25%;
+}
+
+#icons {
+  display: flex;
+  column-gap: 8px;
+}
+.icon{
+  border-radius: 30%;
+  outline: 1.5px solid #fff;
+  transition-property: 
+    outline-offset, outline-color,background-color;
+  transition-duration: 0.25s;
+}
+
+.icon:hover {
+  outline-offset: 2px;
+}
+
+.icon i {
+  margin: auto;
+}
+
+.icon:hover i {
+animation: shake 0.25s;
+}
+
+#phone:hover{
+ background-color: blue;
+}
+
+#email:hover{
+  background-color: orange;
+}
+
+#github:hover{
+  background-color: green;
+}
+
+@keyframes shake {
+  10% {
+    transform: rotate(15deg);
+  }
+  20% {
+    transform: rotate(-15deg);
+  }
+  30% {
+    transform: rotate(15deg);
+  }
+  40% {
+    transform: rotate(-15deg);
+  }
+}
