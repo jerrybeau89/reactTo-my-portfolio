@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { render } from 'react-dom';
-import { BrowserRouter, Routes, Route, HashRouter as Router, useLocation} from 'react-router-dom';
+import { Routes, Route, HashRouter as Router} from 'react-router-dom';
 import App from './App';
 import Main from './components/Main';
 import AboutMe from './components/AboutMe';

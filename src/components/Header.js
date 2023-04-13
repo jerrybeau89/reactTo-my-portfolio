@@ -7,7 +7,7 @@ const Header = () => {
       <header>
          <nav className="navbar bg-dark bg-body-tertiary">
           <div className="d-flex">
-            <a className="navbar-brand text-light px-2" >Jerry Beau Baggett</a>
+            <a className="navbar-brand text-light px-2" href='/' rel="noreferrer" >Jerry Beau Baggett</a>
           </div>
           <nav className="navbar navbar-expand-lg px-2 bg-dark bg-body-tertiary d-flex justify-content-end">
           <div className="d-flex">
@@ -22,19 +22,19 @@ const Header = () => {
               <div className="offcanvas-body text-light">
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                   <li className='nav-item'>
-                    <a className="nav-link active text-light" aria-current="page" href='/'>Home</a>
+                    <a className="nav-link active text-light" aria-current="page" href='/' rel="noreferrer">Home</a>
                   </li>
                   <li className='nav-item'>
-                    <a className="nav-link text-light"  href='#/AboutMe'>About Me</a>
+                    <a className="nav-link text-light"  href='/#/AboutMe' rel="noreferrer">About Me</a>
                   </li>
                   <li className='nav-item'>
-                    <a className="nav-link text-light"  href='#/Portfolio'>Portfolio</a>
+                    <a className="nav-link text-light"  href='/#/Portfolio' rel="noreferrer">Portfolio</a>
                   </li>
                   <li className='nav-item'>
-                    <a className="nav-link text-light"  href='#/Contact'>Contact</a>
+                    <a className="nav-link text-light"  href='/#/Contact' rel="noreferrer">Contact</a>
                   </li>
                   <li className='nav-item'>
-                    <a className="nav-link text-light"  href='#/Resume'>Resume</a>
+                    <a className="nav-link text-light"  href='/#/Resume' rel="noreferrer">Resume</a>
                   </li>
                 </ul>
               </div>
