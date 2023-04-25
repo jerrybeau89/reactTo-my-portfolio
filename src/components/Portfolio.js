@@ -5,12 +5,14 @@ import { projects } from '../assets/js/Projects';
 const Portfolio = () => {
     return (
       <>
-      <div class="grid container my-5">
+      <div className="grid container my-5">
         <h3>Projects</h3>
-          <div class="col-lg-4 text-center hoverable align-self-center rounded bg-secondary">
+        <div className='row'>
+          <div className="col text-center align-self-center rounded">
             {projects.map((project) => (
               <ProjectCard key={project.id} {...project}/>
             ))}
+          </div>
           </div>
       </div>
       </>

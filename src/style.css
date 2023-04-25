@@ -20,23 +20,16 @@ code {
   height: 155px;
   border-radius: 50%;
 }
-/* .P1-img {
-  padding: 5px;
-  margin: 5px;
-  height: 190px;
-  width: 250px;
-  border-radius: 12%;
-} */
 
-.P1-img, .P2-img, .P3-img, .P4-img, .P5-img, .P6-img { 
+.project-img { 
   padding: 5px;
   margin: 5px;
-  max-height: 55%;
-  max-width: 55%;
+  max-height: 200px;
+  max-width: 200px;
   border-radius: 12%;
 }
 .hoverable:hover {
-  box-shadow: 5px 10px 18px 18px #888888;
+  box-shadow: 3px 5px 10px 10px #888888;
   border-radius: 25%;
 }
 
