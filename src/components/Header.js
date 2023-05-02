@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const Header = () => {
 
     return (
@@ -25,16 +26,16 @@ const Header = () => {
                     <a className="nav-link active text-light" aria-current="page" href='/' rel="noreferrer">Home</a>
                   </li>
                   <li className='nav-item'>
-                    <a className="nav-link text-light"  href='/#/AboutMe' rel="noreferrer">About Me</a>
+                    <a className="nav-link text-light"  href='/AboutMe' rel="noreferrer">About Me</a>
                   </li>
                   <li className='nav-item'>
-                    <a className="nav-link text-light"  href='/#/Portfolio' rel="noreferrer">Portfolio</a>
+                    <a className="nav-link text-light"  href='/Portfolio' rel="noreferrer">Portfolio</a>
                   </li>
                   <li className='nav-item'>
-                    <a className="nav-link text-light"  href='/#/Contact' rel="noreferrer">Contact</a>
+                    <a className="nav-link text-light"  href='/Contact' rel="noreferrer">Contact</a>
                   </li>
                   <li className='nav-item'>
-                    <a className="nav-link text-light"  href='/#/Resume' rel="noreferrer">Resume</a>
+                    <a className="nav-link text-light"  href='/Resume' rel="noreferrer">Resume</a>
                   </li>
                 </ul>
               </div>
