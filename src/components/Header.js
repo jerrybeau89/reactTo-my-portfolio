@@ -1,10 +1,8 @@
 import React from 'react';
 
-
 const Header = () => {
 
     return (
-      <>
       <header>
          <nav className="navbar bg-dark bg-body-tertiary">
           <div className="d-flex">
@@ -44,7 +42,6 @@ const Header = () => {
           </nav>
           </nav>
       </header>
-      </>
     );
   };
  
