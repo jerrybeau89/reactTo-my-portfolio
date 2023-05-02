@@ -18,11 +18,10 @@ const App = () => {
             <Routes>
               <Route>
                 <Route index='true' element={<Main />} />
-                <Route path="Main" element={<Main />} />
-                <Route path="AboutMe" element={<AboutMe />} />
-                <Route path="Portfolio" element={<Portfolio />} />
-                <Route path="Contact" element={<Contact />} />
-                <Route path="Resume" element={<Resume />} />
+                <Route path="/AboutMe" element={<AboutMe />} />
+                <Route path="/Portfolio" element={<Portfolio />} />
+                <Route path="/Contact" element={<Contact />} />
+                <Route path="/Resume" element={<Resume />} />
               </Route>
             </Routes>
           </Router>,
