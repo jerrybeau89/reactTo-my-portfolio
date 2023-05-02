@@ -33,7 +33,7 @@ const Resume = () => {
         </ul>
 
       <div >
-        <a className='btn btn-success text-light' href='https://docs.google.com/document/d/1hOJ6au2HX5z-AHcwPJt9PivuboDQURPD/edit?usp=share_link&ouid=105779729295370186894&rtpof=true&sd=true' rel="noreferrer">MY RESUME</a>
+        <a className='btn btn-success text-light' href='https://docs.google.com/document/d/1hOJ6au2HX5z-AHcwPJt9PivuboDQURPD/edit?usp=share_link&ouid=105779729295370186894&rtpof=true&sd=true' target="_blank" rel="noreferrer">MY RESUME</a>
       </div>
     </div >
       </>

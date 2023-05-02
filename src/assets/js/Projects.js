@@ -1,4 +1,4 @@
-import APIs from'../images/APIs.png'
+import puppylove from'../images/puppylove.png'
 import calculator from'../images/calculator.png'
 import careerfindr from'../images/careerfindr.png'
 import FGT from'../images/FGT.png'
@@ -35,19 +35,19 @@ export const projects = [
   },
   {
     id: 2,
-    title: 'Project 3',
-    description: 'Project 3',
-    image: `${APIs}`,
-    imagealt: 'Project 3' ,
-    github: 'https://github.com/jerrybeau89/calculator',
-    deployed: 'https://github.com/jerrybeau89/calculator',
+    title: 'Puppy Love',
+    description: 'Puppy Love',
+    image: `${puppylove}`,
+    imagealt: 'Dating app called puppy love' ,
+    github: 'https://github.com/jerrybeau89/puppy-love',
+    deployed: 'https://puppy-love.herokuapp.com/',
   },
   {
     id: 4,
-    title: 'REGEX Tutorial',
-    description: 'Tutorial for REGEX Expression',
+    title: 'Book Search',
+    description: 'Book Search Engine',
     image: `${JQuery_JSON}`,
-    imagealt: 'REGEX Tutorial',
+    imagealt: 'Book Search',
     github: 'https://github.com/jerrybeau89/calculator',
     deployed: 'https://github.com/jerrybeau89/calculator',
   },

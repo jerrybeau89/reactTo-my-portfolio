@@ -1,11 +1,12 @@
 import React from 'react';
+import pic from "../assets/images/Avatar.jpeg"
 
 const AboutMe = () => {
     return (
       <>
         <div className='grid container my-5 text-end rounded'> 
           <div className='card bg-secondary'>
-            <img src={require('../assets/images/Avatar.jpeg')} className='card-img-top m-2' id='avatar' alt='my profile'/>
+            <img src={pic} className='card-img-top m-2' id='avatar' alt='my profile'/>
             <div className='card-body'>
               <h3 className='card-title'>
                 <p className='card-text'>Hello!!</p>
