@@ -13,6 +13,7 @@ import './style.css'
 const App = () => {
 
     return (
+      
           <BrowserRouter basename='/'>
             <Routes>
                 <Route index='true' element={<Main />} />
