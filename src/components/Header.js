@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
 
@@ -6,7 +7,7 @@ const Header = () => {
       <header>
          <nav className="navbar bg-dark bg-body-tertiary">
           <div className="d-flex">
-            <a className="navbar-brand text-light px-2" href='/' rel="noreferrer" >Jerry Beau Baggett</a>
+            <Link className="navbar-brand text-light px-2" to='/'>Jerry Beau Baggett</Link>
           </div>
           <nav className="navbar navbar-expand-lg px-2 bg-dark bg-body-tertiary d-flex justify-content-end">
           <div className="d-flex">
@@ -21,19 +22,19 @@ const Header = () => {
               <div className="offcanvas-body text-light">
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                   <li className='nav-item'>
-                    <a className="nav-link active text-light" aria-current="page" href='/' rel="noreferrer">Home</a>
+                    <Link className="nav-link active text-light" aria-current="page" to='/'>Home</Link>
                   </li>
                   <li className='nav-item'>
-                    <a className="nav-link text-light"  href='/AboutMe' rel="noreferrer">About Me</a>
+                    <Link className="nav-link text-light"  to='/AboutMe'>About Me</Link>
                   </li>
                   <li className='nav-item'>
-                    <a className="nav-link text-light"  href='/Portfolio' rel="noreferrer">Portfolio</a>
+                    <Link className="nav-link text-light"  to='/Portfolio'>Portfolio</Link>
                   </li>
                   <li className='nav-item'>
-                    <a className="nav-link text-light"  href='/Contact' rel="noreferrer">Contact</a>
+                    <Link className="nav-link text-light"  to='/Contact'>Contact</Link>
                   </li>
                   <li className='nav-item'>
-                    <a className="nav-link text-light"  href='/Resume' rel="noreferrer">Resume</a>
+                    <Link className="nav-link text-light"  to='/Resume'>Resume</Link>
                   </li>
                 </ul>
               </div>

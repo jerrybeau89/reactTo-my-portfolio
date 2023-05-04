@@ -13,16 +13,15 @@ import './style.css'
 const App = () => {
 
     return (
-      
-          <BrowserRouter basename='/'>
-            <Routes>
-                <Route index='true' element={<Main />} />
-                <Route path="/AboutMe" element={<AboutMe />} />
-                <Route path="/Portfolio" element={<Portfolio />} />
-                <Route path="/Contact" element={<Contact />} />
-                <Route path="/Resume" element={<Resume />} />
-            </Routes>
-          </BrowserRouter>
+    
+      <Routes>
+          <Route index='true' element={<Main />} />
+          <Route path="/AboutMe" element={<AboutMe />} />
+          <Route path="/Portfolio" element={<Portfolio />} />
+          <Route path="/Contact" element={<Contact />} />
+          <Route path="/Resume" element={<Resume />} />
+      </Routes>
+          
     )
 }
 
