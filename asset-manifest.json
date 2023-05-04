@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/reactTo-my-portfolio/static/css/main.1d8e5fcd.css",
-    "main.js": "/reactTo-my-portfolio/static/js/main.ad03fbcd.js",
-    "static/media/websitebg.jpeg": "/reactTo-my-portfolio/static/media/websitebg.6589bac075209223ddde.jpeg",
-    "static/media/Avatar.jpeg": "/reactTo-my-portfolio/static/media/Avatar.b141dcf682b319886ac3.jpeg",
-    "static/media/puppylove.png": "/reactTo-my-portfolio/static/media/puppylove.f3b93bb7e18e08c87199.png",
-    "static/media/careerfindr.png": "/reactTo-my-portfolio/static/media/careerfindr.54f602e0cd39cb2342c7.png",
-    "static/media/FGT.png": "/reactTo-my-portfolio/static/media/FGT.87d065f638187c5ca55b.png",
-    "static/media/calculator.png": "/reactTo-my-portfolio/static/media/calculator.e7580d41dbb0808e086f.png",
-    "index.html": "/reactTo-my-portfolio/index.html",
-    "main.1d8e5fcd.css.map": "/reactTo-my-portfolio/static/css/main.1d8e5fcd.css.map",
-    "main.ad03fbcd.js.map": "/reactTo-my-portfolio/static/js/main.ad03fbcd.js.map"
+    "main.css": "./static/css/main.cb6f5410.css",
+    "main.js": "./static/js/main.96043882.js",
+    "static/media/websitebg.jpeg": "./static/media/websitebg.6589bac075209223ddde.jpeg",
+    "static/media/Avatar.jpeg": "./static/media/Avatar.b141dcf682b319886ac3.jpeg",
+    "static/media/puppylove.png": "./static/media/puppylove.f3b93bb7e18e08c87199.png",
+    "static/media/careerfindr.png": "./static/media/careerfindr.54f602e0cd39cb2342c7.png",
+    "static/media/FGT.png": "./static/media/FGT.87d065f638187c5ca55b.png",
+    "static/media/calculator.png": "./static/media/calculator.e7580d41dbb0808e086f.png",
+    "index.html": "./index.html",
+    "main.cb6f5410.css.map": "./static/css/main.cb6f5410.css.map",
+    "main.96043882.js.map": "./static/js/main.96043882.js.map"
   },
   "entrypoints": [
-    "static/css/main.1d8e5fcd.css",
-    "static/js/main.ad03fbcd.js"
+    "static/css/main.cb6f5410.css",
+    "static/js/main.96043882.js"
   ]
 }
