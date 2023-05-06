@@ -1,37 +1,32 @@
 # reactTo-my-portfolio
 This is a repo that contains code for a react centered personal portfolio. 
 
-## Description
 
-- The motivation behind the project was to be able to implement some of the new skills I have developed as a beginner coder so that I can practice building my own website and showing off my work through a portfolio.
-- I started this project as a way to provide examples of my work to future employers. In doing so, I will be able to let my work speak for itself in the future as I improve it.
-- In modifying this project, I learned how to make an floating header,and  building a navigation bar with a hamburger menu.
+## Description
+My portfolio using React App. This portfolio is meant to be ever changing and evolving. 
+
+
+ ## Table of Contents
+  
+  1. [Installation](#installation)
+  2. [Usage](#usage)
+  3. [License](#license)
+  4. [Tests](#tests)
+  5. [Link](#link)
+  6. [Questions](#questions)
 
 ## Installation
-
-"N/A"
+N/A
 
 ## Usage
 
-
-
-### Fullsized Screenshot Top and Bottom
-
-md
-    ![alt text](src/assets/images/websitescsht.png)
-
-
-
-
-## Credits
-
-Code is self developed. 2022 Beau Baggett
+This is my personal portfolio page where users can navigate to learn more about me, view some of my applications I have built, and connect with me for any questions or concerns. 
 
 ## License
 
 MIT License
 
-Copyright (c) 2022 jerrybeau89
+Copyright (c) 2023 Jerry Beau Baggett
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -51,7 +46,18 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
+## Tests
+N/A
 
-## Features
+## Link
 
-Navigation links embeded into the hamburger menu to direct you to the section topic on the webpage. Each work image is linked to its topic.
+https://jerrybeau89.github.io/reactTo-my-portfolio/
+
+## Questions
+
+  Please contact me at jerrybeau89@gmail.com with any questions you may have. You can also find my GitHub at https://github.com/jerrybeau89. Thank you! 
+
+
+​
+
+
