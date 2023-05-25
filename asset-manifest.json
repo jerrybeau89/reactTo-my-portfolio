@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/reactTo-my-portfolio/static/css/main.1d8e5fcd.css",
-    "main.js": "/reactTo-my-portfolio/static/js/main.7bf5f078.js",
+    "main.css": "/reactTo-my-portfolio/static/css/main.66ff8cb3.css",
+    "main.js": "/reactTo-my-portfolio/static/js/main.739ee914.js",
     "static/media/bookSearch.png": "/reactTo-my-portfolio/static/media/bookSearch.5767a549cece380b42ca.png",
     "static/media/websitebg.jpeg": "/reactTo-my-portfolio/static/media/websitebg.6589bac075209223ddde.jpeg",
     "static/media/Avatar.jpeg": "/reactTo-my-portfolio/static/media/Avatar.b141dcf682b319886ac3.jpeg",
     "static/media/careerfindr.png": "/reactTo-my-portfolio/static/media/careerfindr.54f602e0cd39cb2342c7.png",
     "static/media/FGT.png": "/reactTo-my-portfolio/static/media/FGT.87d065f638187c5ca55b.png",
-    "static/media/calculator.png": "/reactTo-my-portfolio/static/media/calculator.e7580d41dbb0808e086f.png",
+    "static/media/daily-planner.png": "/reactTo-my-portfolio/static/media/daily-planner.911abf5e4154ceab6b4a.png",
     "index.html": "/reactTo-my-portfolio/index.html",
-    "main.1d8e5fcd.css.map": "/reactTo-my-portfolio/static/css/main.1d8e5fcd.css.map",
-    "main.7bf5f078.js.map": "/reactTo-my-portfolio/static/js/main.7bf5f078.js.map"
+    "main.66ff8cb3.css.map": "/reactTo-my-portfolio/static/css/main.66ff8cb3.css.map",
+    "main.739ee914.js.map": "/reactTo-my-portfolio/static/js/main.739ee914.js.map"
   },
   "entrypoints": [
-    "static/css/main.1d8e5fcd.css",
-    "static/js/main.7bf5f078.js"
+    "static/css/main.66ff8cb3.css",
+    "static/js/main.739ee914.js"
   ]
 }
