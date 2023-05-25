@@ -1,49 +1,59 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import Offcanvas from "react-bootstrap/Offcanvas";
+import { LinkContainer } from "react-router-bootstrap";
 
 const Header = () => {
+  return (
+    <>
+      <Navbar bg="dark" expand="lg" className="mb-3 sticky-top" >
+        <Container fluid>
+          <LinkContainer to="/">
+            <Navbar.Brand className="text-light">
+              Jerry Beau Baggett
+            </Navbar.Brand>
+          </LinkContainer>
+          <Navbar.Toggle
+            className="bg-secondary"
+            aria-controls={`offcanvasNavbar-expand-lg`}
+          />
+          <Navbar.Offcanvas
+            className="bg-dark text-light"
+            id={`offcanvasNavbar-expand-lg`}
+            aria-labelledby={`offcanvasNavbarLabel-expand-lg`}
+            placement="end"
+          >
+            <Offcanvas.Header closeButton>
+              <Offcanvas.Title id={`offcanvasNavbarLabel-expand-lg`}>
+                Explore
+              </Offcanvas.Title>
+            </Offcanvas.Header>
+            <Offcanvas.Body>
+              <Nav className="justify-content-end flex-grow-1 pe-3">
+                <LinkContainer to="/">
+                  <Nav.Link className="text-light">Home</Nav.Link>
+                </LinkContainer>
+                <LinkContainer to="/aboutme">
+                  <Nav.Link className="text-light">About Me</Nav.Link>
+                </LinkContainer>
+                <LinkContainer to="/portfolio">
+                  <Nav.Link className="text-light">Portfolio</Nav.Link>
+                </LinkContainer>
+                <LinkContainer to="/contact">
+                  <Nav.Link className="text-light">Contact</Nav.Link>
+                </LinkContainer>
+                <LinkContainer to="/resume">
+                  <Nav.Link className="text-light">Resume</Nav.Link>
+                </LinkContainer>
+              </Nav>
+            </Offcanvas.Body>
+          </Navbar.Offcanvas>
+        </Container>
+      </Navbar>
+    </>
+  );
+};
 
-    return (
-      <header>
-         <nav className="navbar bg-dark bg-body-tertiary">
-          <div className="d-flex">
-            <Link className="navbar-brand text-light px-2" to='/'>Jerry Beau Baggett</Link>
-          </div>
-          <nav className="navbar navbar-expand-lg px-2 bg-dark bg-body-tertiary d-flex justify-content-end">
-          <div className="d-flex">
-            <button className="navbar-toggler bg-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-              <span className="navbar-toggler-icon"></span>
-            </button>
-            <div className="offcanvas offcanvas-end bg-dark text-light" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-              <div className="offcanvas-header">
-                <h5 className="offcanvas-title" id="offcanvasNavbarLabel">Explore</h5>
-                <button type="button" className="btn-close text-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
-              <div className="offcanvas-body text-light">
-                <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li className='nav-item'>
-                    <Link className="nav-link active text-light" aria-current="page" to='/'>Home</Link>
-                  </li>
-                  <li className='nav-item'>
-                    <Link className="nav-link text-light"  to='/AboutMe'>About Me</Link>
-                  </li>
-                  <li className='nav-item'>
-                    <Link className="nav-link text-light"  to='/Portfolio'>Portfolio</Link>
-                  </li>
-                  <li className='nav-item'>
-                    <Link className="nav-link text-light"  to='/Contact'>Contact</Link>
-                  </li>
-                  <li className='nav-item'>
-                    <Link className="nav-link text-light"  to='/Resume'>Resume</Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            </div>
-          </nav>
-          </nav>
-      </header>
-    );
-  };
- 
 export default Header;

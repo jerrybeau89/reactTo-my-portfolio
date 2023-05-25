@@ -3,8 +3,8 @@ import React from 'react';
 const Footer = () => {
     return (
       <>
-        <footer>
-          <div className="grid fixed-bottom bg-dark p-1">
+        <footer className='sticky-bottom'>
+          <div className=" bg-dark fixed-bottom p-1">
             <div className="row">
               <div className="col-6 text-end text-light">
                 <h5>Contacts:</h5>

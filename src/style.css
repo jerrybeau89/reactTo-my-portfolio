@@ -15,21 +15,14 @@ code {
     monospace;
 }
 
-#avatar{
+#avatar {
   width: 150px;
   height: 155px;
   border-radius: 50%;
 }
 
-.project-img { 
-  padding: 5px;
-  margin: 5px;
-  max-height: 200px;
-  max-width: 200px;
-  border-radius: 12%;
-}
 .hoverable:hover {
-  box-shadow: 3px 5px 10px 10px #888888;
+  box-shadow: 3px 3px 5px 5px #888888;
   border-radius: 25%;
 }
 
@@ -37,11 +30,12 @@ code {
   display: flex;
   column-gap: 8px;
 }
-.icon{
+
+.icon {
   border-radius: 30%;
-  outline: 1.5px solid #fff;
-  transition-property: 
-    outline-offset, outline-color,background-color;
+  outline: 1.5px solid;
+  transition-property:
+    outline-offset, outline-color, background-color;
   transition-duration: 0.25s;
 }
 
@@ -53,32 +47,34 @@ code {
   margin: auto;
 }
 
-.icon:hover i {
-animation: shake 0.25s;
+#phone:hover {
+  background-color: blue;
+  animation: shake 0.25s;
 }
 
-#phone:hover{
- background-color: blue;
-}
-
-#email:hover{
+#email:hover {
   background-color: orange;
+  animation: shake 0.25s;
 }
 
-#github:hover{
+#github:hover {
   background-color: green;
+  animation: shake 0.25s;
 }
 
 @keyframes shake {
   10% {
     transform: rotate(15deg);
   }
+
   20% {
     transform: rotate(-15deg);
   }
+
   30% {
     transform: rotate(15deg);
   }
+
   40% {
     transform: rotate(-15deg);
   }

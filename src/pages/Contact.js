@@ -1,87 +1,134 @@
-import React, { useRef, useState } from 'react'
-import Form from '../components/Form.js'
-import emailjs from '@emailjs/browser';
+import React, { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
+import Button from "react-bootstrap/Button";
+import Form from "react-bootstrap/Form";
+import Card from 'react-bootstrap/Card';
 
 const Contact = () => {
-  const [values, setValues] = useState({
-          name: "",
-          email: "",
-          message: "",
-      });
-
-      const inputs = [
-          {
-              id: 1,
-              name: "name",
-              type: "text",
-              placeholder: "Name",
-              errorMessage: "Please provide your name!",
-              label: "Name",
-              required: true,
-          },
-          {
-              id: 2,
-              name: "email",
-              type: "email",
-              placeholder: "Email",
-              errorMessage: "Please use a valid email format example@something.com!",
-              label: "Email",
-              required: true,
-          },
-          {
-              id: 3,
-              name: "message",
-              type: "test",
-              placeholder: "Message",
-              errorMessage: "Please provide a message for why you are reaching out!",
-              label: "Message",
-              required: true,
-          }
-      ];
+  const userContact = {
+    user_name: "",
+    user_email: "",
+    user_message: "",
+  };
+  const [values, setValues] = useState(userContact);
+  const [showMessage, setShowMessage] = useState(false);
+  const [validated, setValidated] = useState(false);
+  const formEl = useRef();
 
   const onChange = (e) => {
-      console.log(e.target.value)
-      setValues({ ...values, [e.target.name]: e.target.value })
+    setValues({ ...values, [e.target.name]: e.target.value });
   };
 
-  const form = useRef();
-    const [showMessage, setShowMessage] = useState(false);
-    const sendEmail = (e) => {
-        e.preventDefault();
+  const handleSubmit = (e) => {
+    const form = e.target;
+    if (form.checkValidity() === false) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
+    e.preventDefault();
+    setValidated(true);
 
-        setTimeout(() => { setShowMessage(false) }, 5000)
-        emailjs.sendForm(
-            'service_7cx0qbj',
-            'template_rhsmyzp',
-            form.current,
-            'usbKVnOe8fTRmVVXt')
-            .then((result) => {
-                console.log(result.text);
-                console.log("Message sent!");
-                setShowMessage(true)
+    setTimeout(() => {
+      setShowMessage(false);
+    }, 4000);
+    emailjs
+      .sendForm(
+        "service_7cx0qbj",
+        "template_rhsmyzp",
+        formEl.current,
+        "usbKVnOe8fTRmVVXt"
+      )
+      .then(
+        (result) => {
+          setShowMessage(true);
 
-                e.target.reset()
-            }, (error) => {
-                console.log(error.text);
-            });
-    };
+          e.target.reset();
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
 
   return (
-    <>
-    <div className='grid container my-5 text-center rounded'>
-        <div className='card bg-secondary'>
-          <h1 className='card-title bg-secondary'>Get in touch</h1>
-          <form ref={form} className='h4' onSubmit={sendEmail}>
-              {inputs.map((input) => (
-                <Form key={input.id} {...input} value={values[input.name]} onChange={onChange} />
-                ))}
-              <button className='btn btn-success text-light'>Submit</button>
-              {showMessage && <p className='card-message rounded'>Message Sent!</p>}
-          </form>
-        </div>
-    </div>
-    </>
-    );
-  };
- 
+    <Card className="container-fluid col-8 my-2 text-center rounded bg-secondary bg-opacity-75">
+      <Card.Body>
+        <Card.Title className="bg-success rounded">Connect with me</Card.Title>
+        <Form
+          noValidate
+          validated={validated}
+          onSubmit={handleSubmit}
+          ref={formEl}
+        >
+          <Form.Group className="mb-3" controlId="formName">
+            <Form.Label className="fw-bold">Name</Form.Label>
+            <Form.Control
+              value={values.user_name}
+              as="input"
+              type="text"
+              name="user_name"
+              id="name"
+              placeholder="Your name here.."
+              onChange={onChange}
+              required
+            />
+            <Form.Control.Feedback className="text-dark fw-bold">
+              Thank you, {values.user_name}!
+            </Form.Control.Feedback>
+            <Form.Control.Feedback type="invalid">
+              Please provide your name!
+            </Form.Control.Feedback>
+          </Form.Group>
+
+          <Form.Group className="mb-3" controlId="formEmail">
+            <Form.Label className="fw-bold">Email</Form.Label>
+            <Form.Control
+              value={values.user_email}
+              as="input"
+              type="email"
+              name="user_email"
+              placeholder="someone@somewhere.com"
+              onChange={onChange}
+              required
+            />
+            <Form.Control.Feedback className="text-dark fw-bold">
+              Looks good!
+            </Form.Control.Feedback>
+            <Form.Control.Feedback type="invalid">
+              Please use a valid email format example@something.com!
+            </Form.Control.Feedback>
+          </Form.Group>
+
+          <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+            <Form.Label className="fw-bold">Message</Form.Label>
+            <Form.Control
+              value={values.user_message}
+              as="textarea"
+              name="user_message"
+              id="message"
+              placeholder="How can I help you?"
+              rows={3}
+              onChange={onChange}
+              required
+            />
+            <Form.Control.Feedback className="text-dark fw-bold">
+              Looks good!
+            </Form.Control.Feedback>
+          </Form.Group>
+
+          <Button
+            className="btn-success"
+            variant="primary"
+            type="submit"
+            name="submit"
+          >
+            Connect
+          </Button>
+          {showMessage && <p className="card-message rounded">Message Sent! Thank you, I will reach out once I receive your inquiry!</p>}
+        </Form>
+      </Card.Body>
+    </Card>
+  );
+};
+
 export default Contact;

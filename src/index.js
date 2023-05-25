@@ -3,17 +3,16 @@ import ReactDOM from 'react-dom';
 import Header from './components/Header'
 import Footer from './components/Footer'
 import { BrowserRouter } from 'react-router-dom';
-// import App from './App';
-// import { Outlet } from "react-router-dom";
-// import Location from './components/Location';
 import './style.css'
 import App from './App';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/js/bootstrap.bundle.min";
 
 ReactDOM.render(
   <React.StrictMode>
       <BrowserRouter>
         <Header />
-          <App/>
+          <App />
         <Footer />
       </BrowserRouter>
   </React.StrictMode>,
