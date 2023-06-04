@@ -5,12 +5,14 @@ import Form from "react-bootstrap/Form";
 import Card from 'react-bootstrap/Card';
 
 const Contact = () => {
-  const userContact = {
-    user_name: "",
+  // const userContact = {
+  //   user_name: "",
+  //   user_email: "",
+  //   user_message: "",
+  // };
+  const [values, setValues] = useState( {user_name: "",
     user_email: "",
-    user_message: "",
-  };
-  const [values, setValues] = useState(userContact);
+    user_message: ""});
   const [showMessage, setShowMessage] = useState(false);
   const [validated, setValidated] = useState(false);
   const formEl = useRef();
@@ -21,16 +23,18 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     const form = e.target;
-    if (form.checkValidity() === false) {
-      e.preventDefault();
-      e.stopPropagation();
-    }
+    if (form.checkValidity() === true) {
+    
     e.preventDefault();
     setValidated(true);
 
     setTimeout(() => {
       setShowMessage(false);
+      setValues({ user_name: "",
+    user_email: "",
+    user_message: "",})
     }, 4000);
+
     emailjs
       .sendForm(
         "service_7cx0qbj",
@@ -43,11 +47,15 @@ const Contact = () => {
           setShowMessage(true);
 
           e.target.reset();
+          
         },
         (error) => {
           console.log(error.text);
         }
       );
+      }
+      e.preventDefault();
+      e.stopPropagation();
   };
 
   return (
