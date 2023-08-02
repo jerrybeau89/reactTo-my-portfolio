@@ -1,10 +1,10 @@
-import React from 'react';
+import Card from 'react-bootstrap/Card';
 
 const Main = () => {
     return (
-        <div className='grid text-center'>
-          <div className='g-col my-5 display-1 fw-bold'>Come Explore FullStack With Me</div>
-        </div>
+        <Card className='container bg-success bg-opacity-50 text-center'>
+          <Card.Body className='display-1 fw-bold'>Come Explore FullStack With Me</Card.Body>
+        </Card>
     );
   };
  
