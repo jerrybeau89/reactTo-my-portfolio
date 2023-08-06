@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
-import Card from 'react-bootstrap/Card';
+import Card from "react-bootstrap/Card";
 
 const Contact = () => {
   // const userContact = {
@@ -10,9 +10,11 @@ const Contact = () => {
   //   user_email: "",
   //   user_message: "",
   // };
-  const [values, setValues] = useState( {user_name: "",
+  const [values, setValues] = useState({
+    user_name: "",
     user_email: "",
-    user_message: ""});
+    user_message: "",
+  });
   const [showMessage, setShowMessage] = useState(false);
   const [validated, setValidated] = useState(false);
   const formEl = useRef();
@@ -24,44 +26,42 @@ const Contact = () => {
   const handleSubmit = (e) => {
     const form = e.target;
     if (form.checkValidity() === true) {
-    
-    e.preventDefault();
-    setValidated(true);
-
-    setTimeout(() => {
-      setShowMessage(false);
-      setValues({ user_name: "",
-    user_email: "",
-    user_message: "",})
-    }, 4000);
-
-    emailjs
-      .sendForm(
-        "service_7cx0qbj",
-        "template_rhsmyzp",
-        formEl.current,
-        "usbKVnOe8fTRmVVXt"
-      )
-      .then(
-        (result) => {
-          setShowMessage(true);
-
-          e.target.reset();
-          
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-      }
       e.preventDefault();
-      e.stopPropagation();
+      setValidated(true);
+
+      setTimeout(() => {
+        setShowMessage(false);
+        setValues({ user_name: "", user_email: "", user_message: "" });
+      }, 4000);
+
+      emailjs
+        .sendForm(
+          "service_7cx0qbj",
+          "template_rhsmyzp",
+          formEl.current,
+          "usbKVnOe8fTRmVVXt"
+        )
+        .then(
+          (result) => {
+            setShowMessage(true);
+
+            e.target.reset();
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+    }
+    e.preventDefault();
+    e.stopPropagation();
   };
 
   return (
-    <Card className="container-fluid col-8 my-2 text-center rounded bg-secondary bg-opacity-75">
+    <Card className="container-fluid col-lg-8 my-2 text-center rounded-5 bg-success bg-opacity-25 position-absolute top-50 start-50 translate-middle">
       <Card.Body>
-        <Card.Title className="bg-success rounded">Connect with me</Card.Title>
+        <Card.Title className="bg-success bg-opacity-50 display-3 fw-bold text rounded-5">
+          Connect with me
+        </Card.Title>
         <Form
           noValidate
           validated={validated}
@@ -69,7 +69,7 @@ const Contact = () => {
           ref={formEl}
         >
           <Form.Group className="mb-3" controlId="formName">
-            <Form.Label className="fw-bold">Name</Form.Label>
+            <Form.Label className="fw-bold fs-4 text">Name</Form.Label>
             <Form.Control
               value={values.user_name}
               as="input"
@@ -89,7 +89,7 @@ const Contact = () => {
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="formEmail">
-            <Form.Label className="fw-bold">Email</Form.Label>
+            <Form.Label className="fw-bold fs-4 text">Email</Form.Label>
             <Form.Control
               value={values.user_email}
               as="input"
@@ -108,7 +108,7 @@ const Contact = () => {
           </Form.Group>
 
           <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-            <Form.Label className="fw-bold">Message</Form.Label>
+            <Form.Label className="fw-bold fs-4 text">Message</Form.Label>
             <Form.Control
               value={values.user_message}
               as="textarea"
@@ -125,14 +125,19 @@ const Contact = () => {
           </Form.Group>
 
           <Button
-            className="btn-success"
-            variant="primary"
+            className="btn shadow"
+            variant="danger"
             type="submit"
             name="submit"
           >
             Connect
           </Button>
-          {showMessage && <p className="card-message rounded">Message Sent! Thank you, I will reach out once I receive your inquiry!</p>}
+          {showMessage && (
+            <p className="card-message rounded">
+              Message Sent! Thank you, I will reach out once I receive your
+              inquiry!
+            </p>
+          )}
         </Form>
       </Card.Body>
     </Card>
