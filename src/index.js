@@ -11,7 +11,9 @@ ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter basename="/reactTo-my-portfolio">
       <Header />
+      <hr />
         <App />
+      <hr />
       <Footer />
     </BrowserRouter>
   </React.StrictMode>,

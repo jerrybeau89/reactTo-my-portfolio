@@ -1,6 +1,7 @@
 :root {
   --code: #d63384;
   --text: #f5f5dc;
+  --border: #b3afa9
 
 }
 
@@ -16,16 +17,16 @@ body {
   background-size: cover;
 }
 
-.home{
-  font-size: 100px;
+.home-ani{
+  font-size: 80px;
   background: url('assets/images/websitebg.jpeg') no-repeat center fixed;
   background-size: cover;
   font-weight: 900;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-font-smoothing: antialiased;
- 
 }
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -125,4 +126,36 @@ code {
   40% {
     transform: rotate(-15deg);
   }
+}
+
+@media screen and (min-width: 768px) {
+
+  .home-ani {
+      font-size: 80px;
+      background: url('assets/images/websitebg.jpeg') no-repeat center fixed;
+      background-size: cover;
+      font-weight: 900;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      -webkit-font-smoothing: antialiased;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  
+    .home-link {
+      position: absolute;
+      top: 70%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .page-content {
+      position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
 }

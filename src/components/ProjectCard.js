@@ -20,9 +20,15 @@ const ProjectCard = ({
         </a>
         <h5 className="text">{title}</h5>
         <p className="text">{description}</p>
-        <div className="btn btn-danger shadow-lg text">
-          <a target="_blank" href={github} rel="noreferrer"></a>
-          GitHub
+        <div>
+          <a
+            className="btn btn-danger shadow-lg text"
+            target="_blank"
+            href={github}
+            rel="noreferrer"
+          >
+            GitHub
+          </a>
         </div>
       </div>
     </>

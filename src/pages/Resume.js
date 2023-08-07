@@ -5,12 +5,10 @@ import Button from "react-bootstrap/Button";
 const Resume = () => {
   return (
     <>
-      <Card className="container rounded-5 col-lg col-10 bg-success bg-opacity-25 position-absolute top-50 start-50 translate-middle">
+      <Card className=" page-content container rounded-5 col-lg col-10 bg-success bg-opacity-25 ">
         <Card.Body className="fw-bold">
           <section>
-            <h2 className="text-center text display-5 fw-bold">
-              Experience
-            </h2>
+            <h2 className="text-center text display-5 fw-bold">Experience</h2>
             <div className="text">
               <ul className="row">
                 <li className="col-12 col-lg-3 my-1 fw-bold">
@@ -59,7 +57,7 @@ const Resume = () => {
               </ul>
             </div>
             <Button
-              className="btn shadow d-grid col-3 mx-auto"
+              className="btn shadow d-grid col-sm-2 mx-auto"
               variant="danger"
               href="https://docs.google.com/document/d/1hOJ6au2HX5z-AHcwPJt9PivuboDQURPD/edit?usp=share_link&ouid=105779729295370186894&rtpof=true&sd=true"
               target="_blank"

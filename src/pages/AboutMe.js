@@ -8,7 +8,7 @@ const AboutMe = () => {
   
   return (
     <>
-      <Card className="container position-relative bg-success col-lg col-10 rounded-5 bg-opacity-25 position-absolute top-50 start-50 translate-middle">
+      <Card className="page-content container bg-success col-lg col-10 rounded-5 bg-opacity-25">
         <Card.Body className="fw-bold">
           <section>
             <h2 className="text-center text display-5 fw-bold">
