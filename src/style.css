@@ -17,14 +17,17 @@ body {
   background-size: cover;
 }
 
-.home-ani{
-  font-size: 80px;
+.home-ani {
+  font-size: 45px;
   background: url('assets/images/websitebg.jpeg') no-repeat center fixed;
   background-size: cover;
   font-weight: 900;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-font-smoothing: antialiased;
+}
+.text-animation {
+  font-size: 20px;
 }
 
 code {
@@ -158,4 +161,7 @@ code {
         transform: translate(-50%, -50%);
     }
 
+        .text-ani {
+          font-size: 40px;
+        }
 }

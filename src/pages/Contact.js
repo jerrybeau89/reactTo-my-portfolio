@@ -57,7 +57,7 @@ const Contact = () => {
   };
 
   return (
-    <Card className=" page-content container-fluid col-lg-8 my-2 text-center rounded-5 bg-success bg-opacity-25">
+    <Card className=" page-content container-fluid col-lg-8 col-md-8 col-sm-8 my-2 text-center rounded-5 bg-success bg-opacity-25">
       <Card.Body>
         <Card.Title className="bg-success bg-opacity-50 display-3 fw-bold text rounded-5">
           Connect with me

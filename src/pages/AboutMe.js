@@ -16,7 +16,7 @@ const AboutMe = () => {
             </h2>
             <div className="container">
               <div className="row">
-                <div className="col-lg-2">
+                <div className="col-lg-3 col-xl-3 col-md-4">
                   <img
                     src={pic}
                     className="card-img-top m-2"
@@ -24,19 +24,19 @@ const AboutMe = () => {
                     alt="my profile"
                   />
                 </div>
-                <div className="col-lg-10 px-0 my-4">
+                <div className="col-lg-9 col-xl-9 col-md-8 px-0 my-4">
                   <p className="display-6">
                     <code>{`<HELLO WORLD>`}</code>
                   </p>
-                  <p className="text display-6">I'm Beau.</p>
+                  <p className="text fw-bold display-6">I'm Beau.</p>
                   <TypeAnimation
                     sequence={iam}
                     wrapper="span"
                     speed={40}
                     repeat={Infinity}
                     cursor={true}
-                    className={"intro-position"}
-                    style={{ color: "yellow", fontSize: "2em" }}
+                    className={"text-animation"}
+                    style={{ color: "yellow" }}
                   />
                 </div>
               </div>

@@ -1,5 +1,6 @@
 import { TypeAnimation } from "react-type-animation";
 import { Link } from "react-router-dom";
+import { explore } from "../assets/js/Text";
 
 
 const Home = () => {
@@ -8,12 +9,12 @@ const Home = () => {
     <>
       <div>
         <TypeAnimation
-          className={"home-ani text-center"}
-          sequence={[`Come Explore Full Stack With Me.`, 5000]}
+          sequence={explore}
           wrapper="span"
           speed={30}
-          repeat={Infinity}
+          repeat={1}
           cursor={true}
+          className={"home-ani text-center"}
         />
       </div>
       <div>

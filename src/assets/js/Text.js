@@ -27,4 +27,7 @@ const bio =
     "I'm a full-stack developer.",
     1000,
   ];
-export { intro, bio, lang, frames, dbs, tools, iam};
+
+  const explore = ["Come Explore Full Stack With Me!", 5000];
+
+export { intro, bio, lang, frames, dbs, tools, iam, explore};
