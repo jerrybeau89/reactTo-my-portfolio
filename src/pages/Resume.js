@@ -59,7 +59,7 @@ const Resume = () => {
             <Button
               className="btn shadow d-grid col-sm-2 mx-auto"
               variant="danger"
-              href="https://docs.google.com/document/d/1hOJ6au2HX5z-AHcwPJt9PivuboDQURPD/edit?usp=share_link&ouid=105779729295370186894&rtpof=true&sd=true"
+              href="https://docs.google.com/document/d/1yYns7Fjb0r3NBMzSzixSi6x4_mowTsPPazKruCuDIOo/edit?usp=sharing"
               target="_blank"
               rel="noreferrer"
             >
