@@ -1,4 +1,5 @@
-import dailyPlanner from'../assets/images/daily-planner.png'
+// import dailyPlanner from'../assets/images/daily-planner.png'
+import multiapp from '../assets/images/projects/ReactMultiApp.png'
 import careerfindr from'../assets/images/careerfindr.png'
 import FGT from'../assets/images/FGT.png'
 import bookSearch from '../assets/images/bookSearch.png'
@@ -25,13 +26,22 @@ export const projects = [
   },
   {
     id: 2,
-    title: 'Daily Planner',
-    description: 'Daily Planner',
-    image: `${dailyPlanner}`,
-    imagealt: 'Daily Planner',
-    github: 'https://github.com/jerrybeau89/daily-planner',
-    deployed: 'https://jerrybeau89.github.io/daily-planner/',
+    title: 'Mutli App Tool',
+    description: 'Multi-app tool built with react',
+    image: `${multiapp}`,
+    imagealt: 'Multi App Tool',
+    github: 'https://github.com/jerrybeau89/react-multiapp',
+    deployed: 'https://jerrybeau89.github.io/react-multiapp/',
   },
+  // {
+  //   id: 2,
+  //   title: 'Daily Planner',
+  //   description: 'Daily Planner',
+  //   image: `${dailyPlanner}`,
+  //   imagealt: 'Daily Planner',
+  //   github: 'https://github.com/jerrybeau89/daily-planner',
+  //   deployed: 'https://jerrybeau89.github.io/daily-planner/',
+  // },
   {
     id: 3,
     title: 'Book Search',
